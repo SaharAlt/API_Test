@@ -18,14 +18,6 @@ public class test {
     public void addNewDevice() {
         RestAssured.baseURI = "https://api.restful-api.dev/objects";
 
-//        String requestBody = "{\n" +
-//        			"\"name\": \"Apple Max Pro 1TB\",\n" +
-//        			"\"data\": {\n" +
-//        			"\"year\": 2023,\n" +
-//        			"\"price\": 7999.99,\n" +
-//        			"\"CPU model\": \"Apple ARM A7\",\n" +
-//                	"\"Hard disk size\": \"1 TB\"\n" +
-//                	"}\n" + "}";
 
         Response response = sendPostRequest("{\n" +
     										"\"name\": \"Apple Max Pro 1TB\",\n" +
@@ -45,13 +37,13 @@ public class test {
         String cpuModel = response.jsonPath().getString("data['CPU model']");
         String hardDiskSize = response.jsonPath().getString("data['Hard disk size']");
 
-        Assert.assertNotNull(id, "ID should not be null");
-        Assert.assertEquals(name, "Apple Max Pro 1TB", "Name should be Apple Max Pro 1TB");
-        Assert.assertNotNull(createdAt, "CreatedAt should not be null");
-        Assert.assertEquals(year, 2023, "Year should be 2023");
-        Assert.assertEquals(price, 7999.99, "Price should be 7999.99");
-        Assert.assertEquals(cpuModel, "Apple ARM A7", "CPU model should be Apple ARM A7");
-        Assert.assertEquals(hardDiskSize, "1 TB", "Hard disk size should be 1TB");
+        Assert.assertNotNull(id, "The ID should not be null");
+        Assert.assertEquals(name, "Apple Max Pro 1TB", "The name should be Apple Max Pro 1TB");
+        Assert.assertNotNull(createdAt, "The createdAt should not be null");
+        Assert.assertEquals(year, 2023, "The year should be 2023");
+        Assert.assertEquals(price, 7999.99, "The price should be 7999.99");
+        Assert.assertEquals(cpuModel, "Apple ARM A7", " The CPU model should be Apple ARM A7");
+        Assert.assertEquals(hardDiskSize, "1 TB", "The hard disk size should be 1TB");
 
 	    System.out.println(response.getBody().asString());
 
