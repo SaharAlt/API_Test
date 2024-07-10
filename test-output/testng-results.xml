@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-07-09T23:52:40 AST" name="Default suite" finished-at="2024-07-09T23:52:44 AST" duration-ms="4574">
+  <suite started-at="2024-07-10T23:05:49 AST" name="Default suite" finished-at="2024-07-10T23:05:54 AST" duration-ms="4704">
     <groups>
     </groups>
-    <test started-at="2024-07-09T23:52:40 AST" name="Default test" finished-at="2024-07-09T23:52:44 AST" duration-ms="4574">
+    <test started-at="2024-07-10T23:05:49 AST" name="Default test" finished-at="2024-07-10T23:05:54 AST" duration-ms="4704">
       <class name="APITest.test">
-        <test-method signature="addNewDevice()[pri:0, instance:APITest.test@5d066c7d]" started-at="2024-07-09T23:52:40 AST" name="addNewDevice" finished-at="2024-07-09T23:52:44 AST" duration-ms="4467" status="PASS">
+        <test-method signature="addNewDevice()[pri:0, instance:APITest.test@332796d3]" started-at="2024-07-10T23:05:49 AST" name="addNewDevice" finished-at="2024-07-10T23:05:54 AST" duration-ms="4565" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addNewDevice -->
